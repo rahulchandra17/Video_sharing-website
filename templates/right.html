@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><img style="height: 40px; width: 40px;" src="{{url_for('static',filename='home.png')}}" alt=""></td>
+            <td><a style="text-decoration: none;color: black;" href="/left.html" target="left">Home</a></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><img style="height: 40px; width: 40px;" src="{{url_for('static',filename='trending.jpg')}}" alt=""></td>
+            <td><a style="text-decoration: none;color: black;" href="/frameleft.html" target="left">Trending</a></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><img style="height: 40px; width: 40px;" src="{{url_for('static',filename='logo4.png')}}" alt=""></td>
+            <td><a style="text-decoration: none;color: black;" href="{{ url_for('user_posts',username=current_user.username) }}" target="left">Subscription</a></td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td><img style="height: 40px; width: 40px;" src="{{url_for('static',filename='logo5.png')}}" alt=""></td>
+            <td><a style="text-decoration: none;color: black;" href="{{ url_for('new_post') }}" target="left">Upload video</a></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><img style="height: 40px; width: 40px;" src="{{url_for('static',filename='logo6.png')}}" alt=""></td>
+            <td><a style="text-decoration: none;color: black;" href="/frameleft.html" target="left">History</a></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

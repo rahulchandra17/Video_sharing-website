@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div style="height: 7%;width: 100%;display: flex;align-items: center; justify-content: center; ">
+        <div style="width: 30%;">
+            <img style="height: 25px;width: 30px;" src="{{url_for('static',filename='toggle.png')}}" alt="">
+            <img style="height: 25px;width: 100px;" src="{{url_for('static',filename='youtube.png')}}" alt="">
+        </div>
+        <div style="width: 40%; ">
+
+            <form action="search" method="GET" target="left">
+                <input type="text" id="myInput" placeholder="Search for names.." name="search">
+
+                <button style="height: 25px;width: 80px;" type="submit">Search</button>
+            </form>
+
+        </div>
+        <div style="width: 30%; align-items: flex-end;">
+            <!-- <img style="height: 30px;width: 35px;" src="/static/logo1.png" alt="">
+            <img style="height: 30px;width: 35px;" src="/static/logo2.png" alt="">
+            <img style="height: 30px;width: 35px;" src="/static/logo3.png" alt=""> -->
+
+            <a href="{{ url_for('register') }}" target="left"><input style="height: 24px;width: 80px;" type="button" value="SIGN-up"></a>
+            <a href="{{ url_for('login') }}" target="left"><input style="height: 24px;width: 80px;" type="button" value="SIGN-IN"></a>
+
+        </div>
+    </div>
+</body>
+<script src="/static/search.js"></script>
+
+</html>

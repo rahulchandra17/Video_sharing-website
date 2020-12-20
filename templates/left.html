@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eWI_BtcDJu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td> <img style="height: 100px; width: 100px;" src="{{url_for('static',filename='apple.png')}}" alt="">
+            </td>
+            <td ">
+                <p>The most powerful iPhone ever Ad Apple India
+                </p>
+                <button style="height: 50px;width: 150px; background-color: rgb(65, 65, 236); ">Learn more</button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><iframe width="350 " height="200 " src="https://www.youtube.com/embed/Tcw08o3GMWY " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe></td>
+            <td><iframe width="350 " height="200 " src="https://www.youtube.com/embed/BOezfUn9lSc " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe></td>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/4_XfJ29K9P4 " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
+                </iframe>
+            </td>
+
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/u9B-yMUw3m4 " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/e3_BaawzCsw " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/28nTmG2Olbw " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/LuXfr87g6Qw " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/PN3kVr4GT2o " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="350 " height="200 " src="https://www.youtube.com/embed/pd0pyRwMZp8 " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+   
+    <table >
+        <tr>
+            
+            {% for post in posts.items %}
+           
+                <video width="350 " height="200 " controls>
+                    <source src="{{url_for( 'static',filename='video.mp4' )}} " type="video/mp4 ">
+                  </video>
+            
+            {% endfor %}
+        </tr>
+    </table>
+   
+
+
+</body>
+
+</html>
